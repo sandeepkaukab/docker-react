@@ -7,4 +7,3 @@ before_install:
 
 script:
   - docker run sandeepkaukab/docker-react npm run test -- --coverage
-  - bash stopdocker.sh
