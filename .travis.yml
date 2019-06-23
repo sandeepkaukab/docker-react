@@ -7,5 +7,4 @@ before_install:
 
 script:
   - docker run sandeepkaukab/docker-react npm run test -- --coverage
-  - dockps=$(docker ps | awk '{print $1}' | tail -1)
-  - docker stop ${dockps}
+  - bash stopdocker.sh
